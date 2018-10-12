@@ -10,6 +10,9 @@ class Controversy:
     @param source: (str):       URL of article confirming controversy and date of the controversy.
     @param notes:  (str):       Any relevant notes about the company/controversy not contained in the other parameters.
     """
+    with open('ALPHA_VANTAGE_API_KEY', 'r') as f:
+        API_KEY = f.read()[:-1]      # get API key, ignore the \n at the end
+
     def __init__(self, company, stock, date, summary, source, notes=None):
         """init for Controversy
         """
