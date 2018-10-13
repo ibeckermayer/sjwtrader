@@ -1,4 +1,4 @@
-Company,Stock,Date_Of_Controversy (DD/MM/YYYY),Summary,Source,Notes
+Company,Stock,Date_Of_Controversy_m/d/y,Summary,Source,Notes
 United Airlines,UAL,4/10/17,Pulled passenger off of flight,https://www.youtube.com/watch?v=VrDWY6C1178,
 Fox,FOXA,4/1/17,Bill O'Reilly sexual assault,http://www.latimes.com/entertainment/tv/la-et-st-bill-oreilly-controversy-timeline-20170420-htmlstory.html#,
 Facebook,FB,4/10/17,Zuckerberg testifies over Russian interference,https://www.youtube.com/watch?v=cyJosQBtzsw,
@@ -6,14 +6,13 @@ Facebook,FB,9/5/18,Sandberg testifies over Russian interference,https://www.pbs.
 Twitter,TWTR,9/5/18,Dorsey testifies over Russian interference,https://www.pbs.org/newshour/politics/read-ceo-jack-dorseys-full-testimony-on-twitter-and-political-bias,
 Google,GOOG,9/5/18,Google exec testifies over Russian interference,https://techcrunch.com/2018/09/04/larry-page-google-senate-intel-hearing/,
 Equifax,EFX,9/17/17,Equifax Hackers Steal Personal Details of Up to 143 Million People,http://fortune.com/2017/09/07/equifax-hackers-personal-details-143-million-people/,
-Samsung,SSNLF,8/25/17,Samsung's Bribery Charges,https://www.bbc.com/news/business-41033568,
+Samsung,EWY,8/25/17,Samsung's Bribery Charges,https://www.bbc.com/news/business-41033568,No data on the official stock price but using an ETF 22% of its assets invested in Samsung as a proxy.
 Wells Fargo,WFC,9/16/16,Wells Fargo Opened a Couple Million Fake Accounts,https://www.bloomberg.com/view/articles/2016-09-09/wells-fargo-opened-a-couple-million-fake-accounts,
 Apple,AAPL,12/20/17,Apple Is Slowing Down Your Old iPhone,http://fortune.com/2017/12/20/apple-iphone-battery-slowdown/,
 Cigna,CI,1/22/16,Cigna temporarily banned from new Medicare plans,https://www.usatoday.com/story/money/2016/01/22/cigna-medicare-sanctions/79160738/,disclosed late on the 21st but the news seems to have become widely known on the 22
 Vice Media,DIS-FOX,12/23/17,Vice sexual harassment scandal,https://www.nasdaq.com/article/will-vice-media-ipo-in-2017-everything-investors-need-to-know-cm724799,Vice remains private but big investors include DIS-FOXA (source: https://www.nasdaq.com/article/will-vice-media-ipo-in-2017-everything-investors-need-to-know-cm724799)
-Foxconn,FOXCONN-FXCOF-2354.TW-2317.TW,8/23/16,Foxconn worker suicides,https://www.sdcexec.com/risk-compliance/news/12248367/latest-foxconn-worker-deaths-build-case-for-apple-to-move-operations-from-china,Not clear how widely this became known but worth an investigation. Also not clear which of the listed stock abbreviations is correct
+Foxconn,2354.TW-2317.TW,8/23/16,Foxconn worker suicides,https://www.sdcexec.com/risk-compliance/news/12248367/latest-foxconn-worker-deaths-build-case-for-apple-to-move-operations-from-china,Not clear how widely this became known but worth an investigation. Also not clear which of the listed stock abbreviations is correct
 Electronic Arts Inc.,EA,11/12/17,Battlefront 2 in game purchases scandal,https://www.reddit.com/r/StarWarsBattlefront/comments/7cff0b/seriously_i_paid_80_to_have_vader_locked/dppum98/,Dated this to the day of the Reddit AMA that resulted in the most downvoted comment in Reddit history
-Apollo Education Group,APOL,10/9/15,DoD bans service members from using federal money to attend University of Phoenix ,https://www.washingtonpost.com/news/grade-point/wp/2015/10/09/why-the-defense-department-is-kicking-the-university-of-phoenix-off-military-bases/?utm_term=.73ba99443c5e,Stock is no longer traded on the NASDAQ (source: https://www.bizjournals.com/phoenix/news/2017/02/01/university-of-phoenix-1-1b-merger-closes-stops.html)
 Papa John's,PZZA,7/11/18,Papa John's Founder Used N-Word On Conference Call,https://www.forbes.com/sites/noahkirsch/2018/07/11/papa-johns-founder-john-schnatter-allegedly-used-n-word-on-conference-call/#4990b7334cfc,Better ingredients. Better Pizza. Papa John's
 Google,GOOG,8/4/17,James Damore diversity manifesto,https://www.businessinsider.com/google-engineer-anti-diversity-manifesto-causes-uproar-2017-8,
 Facebook,FB,9/6/17,Facebook says fake accounts linked to Russia bought thousands of ads during US election,https://www.businessinsider.com/facebook-says-fake-accounts-linked-to-russia-bought-ads-during-us-election-2017-9,
@@ -31,8 +30,6 @@ Uber,GOOG-MSFT-BLK,6/20/17,The impossible happens and Kalanick resigns,https://w
 Walmart,WMT,10/27/14,Walmart's Website Features a Section of 'Fat Girl Costumes',https://jezebel.com/walmarts-website-features-a-section-of-fat-girl-costum-1651125569,LMFAO
 Target,TGT,10/22/14,Petition targets ‘Breaking Bad’ action figures,https://www.pressherald.com/2014/10/22/petition-targets-breaking-bad-action-figures/,
 US Airways Group Inc,LCC,4/14/14,US Airways Tweeted An Extreme Pornographic Image And Left It Up For A Long Time,https://www.businessinsider.com/us-airways-pornographic-tweet-2014-4,
-"American Apparel, Inc",APP,3/28/14,"Behold the Grossest, Perviest Picture American Apparel Has Ever Posted",https://jezebel.com/behold-the-grossest-perviest-picture-american-apparel-1553469611,
-Malaysia Airlines ,MLYAF,8/28/14,Malaysia Airlines “My Ultimate Bucket List” competition,https://www.malaymail.com/s/735773/mas-offers-free-flights-after-near-empty-plane-snapshot-goes-viral,
 Amazon,AMZN,9/20/17,Staff At Flagship Amazon Site Take Home Less Than Minimum Wage After Paying Bus 'Benefit',https://www.huffingtonpost.co.uk/entry/amazon-rugeley-minimum-wage-bus-costs_uk_59c12317e4b0186c2205c5ff?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cudGhlc3RyZWV0LmNvbS9zdG9yeS8xNDMxMjUzOS8xL2FtYXpvbi13YXJlaG91c2UtZW1wbG95ZWVzLWRpc2N1c3MtZ3J1ZWxpbmctd29yay5odG1s&guce_referrer_cs=rKDsURPz4ZSrUv1l0QVmsQ,
 Amazon,AMZN,8/15/15,Amazon conducting an experiment on how far it can push it's white collar workers,https://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html?_r=0,
 Comcast Corporation,CMCSA,1/28/15,Comcast called a customer an asshole in writing,https://www.elliott.org/is-this-enough-compensation/comcast-thinks-husband-ahole-put-writing/,
@@ -40,3 +37,5 @@ TLC,DISCA-DISCB-DISCK,5/21/15,Josh Duggar Molestation controversy,https://en.wik
 Nestle,NSRGY,11/23/15,"Nestle Finds Abuse, Forced Labor by Thai Seafood Suppliers",https://www.bloomberg.com/news/articles/2015-11-24/nestle-finds-abuse-forced-labor-by-its-thai-seafood-suppliers,
 Volkwagen,VWAGY,9/18/15,"VW is told to recall 482,000 cars in the US after it is caught deploying sophisticated software to cheat emissions tests ",https://www.theguardian.com/business/2015/dec/10/volkswagen-emissions-scandal-timeline-events,
 YUM!,YUM-MCD,7/21/14,"McDonald's, KFC Snagged By New Food Safety Scandal In China",https://www.forbes.com/sites/briansolomon/2014/07/21/mcdonalds-kfc-snagged-by-new-food-safety-scandal-in-china/#5bb879594166,"It looks like this would also affect MCD, see article"
+,,,,,
+,,,,,
