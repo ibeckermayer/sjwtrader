@@ -1,10 +1,19 @@
+"""Script to generate a list of Controversy objects for each controversy in the .csv.
+Due to API call limits for alpha_vantage, I'm forced to limit my calls to once per minute
+(see __init__ in model/Controversy). For that reason, it makes most sense to just do this
+once and then serialize (meaning save to hard disk) the list of controversy objects, and
+then write a different script that loads those objects and creates graphs from them.
+"""
+
 import pandas as pd
+import pickle
 from datetime import datetime
 from model.Controversy import Controversy
 
-# The actual format of the Date_Of_Controversy... column is MM/DD/YYYY, despite the name of the column.
-# My fucking student Excel liscense expired the day that I'm writing this so I can't change the label in the spreadsheet
-# Such is the life of a starving artist (pronounced 'arteeeest')
+DATA = "data/controversy_data.csv"
+ENCODING = "ISO-8859-1"
+PIK = "data/controversies.pickle"
+
 def date_to_datetime(date):
     """format all the date strings into MM/DD/YYYY and then return datetime
 
@@ -26,13 +35,16 @@ def date_to_datetime(date):
 
     return datetime.strptime(mmddyyyy, "%m/%d/%Y")
 
-df = pd.read_csv("data/controversy_data.csv", encoding = "ISO-8859-1")
+df = pd.read_csv(DATA, encoding=ENCODING)
 
 controversies = []              # list to hold all the controversies
 for index, row in df.iterrows():  # convert each row into Controversy and add to list
     controversies.append(Controversy(row["Company"],
-                                     row["Stock"],
-                                     date_to_datetime(row["Date_Of_Controversy (DD/MM/YYYY)"]),
+                                     row["Stock"].split('-'),
+                                     date_to_datetime(row["Date_Of_Controversy_m/d/y"]),
                                      row["Summary"],
                                      row["Source"],
                                      row["Notes"]))
+
+with open(PIK, "wb") as f:
+    pickle.dump(controversies, f)
