@@ -27,7 +27,7 @@ class Controversy:
     @param[in] source: (str):       URL of article confirming controversy and date of the controversy.
     @param[in] notes:  (str):       Any relevant notes about the company/controversy not contained in the other parameters.
 
-    @param[out] dfs:    (list[pd.DataFrame]): List of DataFrames containing the actual stock data corresponding to each
+    @param[out] stock_data_dfs:    (list[pd.DataFrame]): List of DataFrames containing the actual stock data corresponding to each
                                               stock abbreviation listed in stocks.
     """
 
@@ -42,11 +42,10 @@ class Controversy:
         self.notes = notes if notes is not None else ""
 
         # get all the data on hand for each stock, as pd dataframes
-        self.dfs = []
+        self.stock_data_dfs = []
         print("Fetching stock data for the company {}".format(self.company))
         for stock in self.stocks:
             print("Fetching data for stock {}".format(stock))
-            self.dfs.append(ts.get_daily_adjusted(symbol=stock, outputsize='full')[0])
+            self.stock_data_dfs.append(ts.get_daily_adjusted(symbol=stock, outputsize='full')[0])
             sleep(60)           # sleep a minute to avoid over-calling the API
         print()
-
