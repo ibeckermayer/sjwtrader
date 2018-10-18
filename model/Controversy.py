@@ -86,24 +86,6 @@ class Controversy:
                     pass
             if delt_days == len(df):
                 print("No data for these dates")
-        # for i in range(len(self.dfs)):
-        #     df = self.dfs[i]
-        #     df = df[df[ADJ_CLOSE] != 0]  # drop any points where adj_closed == 0, appears to be noise
-        #     stock = self.stocks[i]
-        #     date = self.date
-        #     df = df.reset_index()    # take date index and make it a column, now have normal integer indexing
-
-        #     # loop for if the controversy date is on a weekend
-        #     # if so, keep going back one day
-        #     con_index = None
-        #     delt_days = 0
-        #     while con_index is None:
-        #         try:
-        #             con_index = df[df["date"] ==
-        #                            (date - timedelta(days=delt_days)).strftime("%Y-%m-%d")].index[0]  # find the index corresponding to controversy date
-        #         except:
-        #             delt_days+=1
-        #             pass
             three_day_df = df[(con_index-N)-delt_days:(con_index+N+1)+delt_days]  # get the data within N days
             dates = matplotlib.dates.date2num([datetime.strptime(d, "%Y-%m-%d") for d in three_day_df["date"].values])
             adjusted_close = three_day_df[ADJ_CLOSE].values
