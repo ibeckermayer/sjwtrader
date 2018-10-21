@@ -72,8 +72,22 @@ if __name__ == "__main__":
                                              row["Source"],
                                              row["Notes"]))
 
+
+    """Manually ammending wrong entries noticed during analysis"""
+    for controversy in controversies:
+        if controversy.company == "Walmart" and controversy.date == date_to_datetime("10/27/14"):
+            print("ammending Walmart")
+            controversy.date = date_to_datetime("10/21/14")
+        if controversy.company == "Wells Fargo" and controversy.date == date_to_datetime("9/16/16"):
+            print("ammending Wells Fargo")
+            controversy.date = date_to_datetime("9/8/16")
+        if controversy.company == "United Airlines" and controversy.source == "https://www.washingtonpost.com/":
+            print("ammending United")
+            controversy.source = "https://www.bostonglobe.com/news/nation/2017/03/26/two-girls-barred-from-united-flight-for-wearing-leggings/WSVuMJEykxM85db1CCzB2N/story.html"
+        if controversy.company == "Equifax" and controversy.date == date_to_datetime("9/17/17"):
+            print("ammending Equifax")
+            controversy.date = date_to_datetime("9/7/17")
+
+
     with open(PIK, "wb") as f:
         pickle.dump(controversies, f)
-
-
-        
