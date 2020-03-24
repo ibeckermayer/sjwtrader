@@ -1,7 +1,7 @@
 alpha-vantage==2.1.0
 appnope==0.1.0
 backcall==0.1.0
-bleach==3.0.2
+bleach==3.1.2
 certifi==2018.8.24
 chardet==3.0.4
 cycler==0.10.0
